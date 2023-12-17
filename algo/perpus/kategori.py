@@ -60,7 +60,7 @@ def print_buku_by_tahun():
 
 def print_buku_by_nama():
     ts_instance = Tes()
-    nama_pe = (input("Masukkan nama penulis buku: "))
+    nama_pe = (input("Masukkan nama penulis buku: ")).lower() #Menambah Fungsi Lower di inputan 'nama_pe'
 
     hasil_filter = None
 
