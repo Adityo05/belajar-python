@@ -36,8 +36,9 @@ class Tes:
         return hasil_filter
     
     def filter_buku_by_nama_p(self, nama_p):
-      hasil_filter = {judul: buku_info for judul, buku_info in self.buku.items() if buku_info.get("Penulis") == nama_p}
-      return hasil_filter
+        nama_p = nama_p.lower() #Ubah input menggunakan lower
+        hasil_filter = {judul: buku_info for judul, buku_info in self.buku.items() if nama_p in buku_info.get("Penulis").lower()} #Menggunakan fungsi in pada buku_info.get dan menambah fungsi lower diakhir
+        return hasil_filter
         
 
 def tes():
