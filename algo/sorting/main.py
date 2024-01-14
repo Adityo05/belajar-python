@@ -55,7 +55,7 @@ def min():
         table.field_names = [welcome]
         table.add_row(["ini urutan jarak terdekat warung untuk anda"])
         print(table)
-        coba()
+        stat2() #awalnya coba() diganti jadi stat2
         min()
         return
     elif pilihan == 3:
